@@ -1,0 +1,26 @@
+name: Duels
+version: '${project.version}'
+main: org.distantnetwork.duels.Duels
+api-version: 1.18
+commands:
+  discord:
+    usage: /discord
+    description: Opens the Discord Server
+  store:
+    usage: /store
+    description: Opens the Store
+  duel:
+    usage: /duel <player>
+    description: Starts a duel with the specified player
+  duelaccept:
+    usage: /duelaccept <player>
+    description: Accepts a duel
+  duelcancel:
+    usage: /duelcancel <player>
+    description: Cancels a duel
+    aliases:
+      - duelreject
+      - dueldeny
+  createarena:
+    usage: /createarena <name>
+    description: Creates an arena with the specified name
